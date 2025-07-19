@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isabely Reis - Consultoria de Treinos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #e6ccff, #ffffff);
+      color: #ff4db8;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #ff4db8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #662d91;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .plano {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .plano:hover {
+      transform: scale(1.05);
+    }
+
+    .plano h3 {
+      color: #ff4db8;
+      margin-bottom: 15px;
+    }
+
+    .plano p {
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #fff;
+      border: 2px solid #ffcc00;
+      color: #ffcc00;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+      color: white;
+    }
+
+    footer {
+      background-color: #fff;
+      color: #662d91;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 60px;
+    }
+
+    .icones img {
+      width: 30px;
+      margin: 10px;
+      vertical-align: middle;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Logo Isabely Reis" />
+  <h1>Consultoria de Treinos com Isabely Reis</h1>
+  <nav>
+    <a href="#planos">Planos</a>
+    <a href="#hipopressivo">Hipopressivo</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="planos">
+  <h2>Planos Disponíveis</h2>
+  <div class="planos">
+    <div class="plano">
+      <h3>Bronze</h3>
+      <p>+ 1 ficha de treino <br> sem avaliação</p>
+      <a class="btn" href="https://mpago.la/1GDS9Cc" target="_blank">Assinar Bronze - R$39,90</a>
+    </div>
+    <div class="plano">
+      <h3>Prata</h3>
+      <p>1 avaliação mensal <br> + 1 ficha de treino <br> específica para seu propósito</p>
+      <a class="btn" href="https://mpago.la/1sNSVmQ" target="_blank">Assinar Prata - R$69,90</a>
+    </div>
+    <div class="plano">
+      <h3>Ouro</h3>
+      <p>Método Hipopressivo <br> + avaliação física quinzenal <br> + acompanhamento via WhatsApp</p>
+      <a class="btn" href="https://mpago.la/2H5KpQe" target="_blank">Assinar Ouro - R$99,90</a>
+    </div>
+  </div>
+</section>
+
+<section id="hipopressivo">
+  <h2>O que é o Método Hipopressivo?</h2>
+  <p>É uma técnica que fortalece a musculatura abdominal profunda, melhora a postura, reduz medidas e auxilia na prevenção de disfunções pélvicas.</p>
+  <p><strong>Quem pode fazer:</strong> pessoas com boa saúde geral.<br><strong>Quem não pode:</strong> grávidas, pessoas com hipertensão descompensada ou problemas cardíacos sem liberação médica.</p>
+</section>
+
+<section id="contato">
+  <h2>Fale Comigo</h2>
+  <p>Entre em contato para tirar dúvidas ou iniciar sua consultoria personalizada!</p>
+  <div class="icones">
+    <a href="https://wa.me/5517996357975"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /></a>
+    <a href="https://www.instagram.com/_isabelyreis"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" /></a>
+    <a href="mailto:isabelygomesdosreis@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" /></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Isabely Reis. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
